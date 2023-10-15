@@ -108,12 +108,10 @@ video {
 /*=== GENERAL STYLES ===*/
 
 body {
-    margin: 0 auto;
     font-family: var(--ff-primary);
     font-size: var(--fs-400);
     font-weight: var(--fw-normal);
     color: var(--clr-neutral-100);
-    /* background-color: var(--clr-neutral-900); */
     background-image: linear-gradient(var(--clr-neutral-900), var(--clr-neutral-800));
 }
 
@@ -131,24 +129,21 @@ h6 {
     line-height: 1.2;
 }
 
-a {
-    text-decoration: none;
+.wrapper {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1920px;
 }
 
-.wrapper {
-    max-width: 1400px;
+.grid-container {
+    grid-template-columns: 2fr 3fr;
 }
 
 .hero {
-    flex: 2;
-    background-image: url(images/bg.jpg);
+    background-image: url(images/carbique-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.main {
-    flex: 3;
 }
 
 .hero-logo {
@@ -214,12 +209,16 @@ a {
     outline: none;
 }
 
+.form-input:focus {
+    background-color: var(--clr-neutral-700);
+}
+
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label
  {
-    transform: translateY(-100%);
-    color: var(--clr-primary-300);
     padding: 0;
+    color: var(--clr-primary-300);
+    transform: translateY(-100%);
     transition: all .03s ease;
 }
 
@@ -247,7 +246,7 @@ a {
 /* === UTILITY CLASSES === */
 
 .container {
-    padding: var(--spacer-md) var(--spacer-lg);
+    padding: var(--spacer-lg);
 }
 .grid {
     display: grid;
@@ -280,9 +279,7 @@ a {
 /* === MEDIA QUERIES === */
 
 @media (max-width: 55em) {
-    .wrapper {
-        flex-direction: column;
-    }
+    .grid-container, 
     .form-content {
         grid-template-columns: 1fr;
     }

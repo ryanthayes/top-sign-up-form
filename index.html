@@ -14,69 +14,76 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <div class="wrapper flex">
+    <div class="wrapper">
         
-        <section id="hero" class="hero container">
-            <img class="hero-logo" src="images/carbique-logo.svg" alt="">
-        </section>
-        
-        <section id="main" class="main">
-
-            <div class="main-header">
-                <div class="main-header-container container">
-                    <h1 class="title">Introducing Carbique</h1>
-                    <h2 class="subtitle">It’s seltzer. From the future.</h2>
-                </div>
-            </div>
-
-            <form action="#" class="form">
-
-                <div class="form-container container">                    
-                    <legend class="form-legend">
-                        <h2 class="form-title">It's almost here. Be among the first to get yours.</h2>
-                        <p class="form-text">By entering your name and email address, we'll reach out to you the moment our pre-order process opens up. We'll never sell your information or share it with third-party marketing services.</p>
-                    </legend>
-                    <div class="form-content grid">
-                        <div class="input-container flex flex-columns">
-                            <input class="form-input" type="text" id="first-name" name="first-name" aria-label="first-name" placeholder=" " required>
-                            <label class="form-label" for="first-name"><span class="label-content">First Name</span></label>
-                        </div>
-                        <div class="input-container flex flex-columns">
-                            <input class="form-input" type="text" id="last-name" name="last-name" aria-label="last-name" placeholder=" " required>
-                            <label class="form-label" for="last-name">Last Name</label>
-                        </div>
-                        <div class="input-container flex flex-columns">
-                            <input class="form-input" type="email" id="email" name="email" aria-label="email" placeholder=" " required>
-                            <label class="form-label" for="email">Email</label>
-                        </div>
-                        <div class="input-container flex flex-columns">
-                            <input class="form-input" type="tel" id="phone-number" name="phone-number" aria-label="phone-number" placeholder=" " required>
-                            <label class="form-label" for="phone-number">Phone Number</label>
-                        </div>
-                        <div class="input-container flex flex-columns">
-                            <input class="form-input" type="password" id="password" name="password" aria-label="password" placeholder=" " required>
-                            <label class="form-label" for="password">Password</label>
-                        </div>
-                        <div class="input-container flex flex-columns">
-                            <input class="form-input" type="password" id="confirm-password" name="confirm-password" aria-label="confirm-password" placeholder=" " required>
-                            <label class="form-label" for="confirm-password">Confirm Password</label>
-                        </div>
+        <div class="grid grid-container">
+            
+            <section id="hero" class="hero container">
+                <img class="hero-logo" src="images/carbique-logo.svg" alt="">
+            </section>
+            
+            <section id="main" class="main">
+    
+                <div class="main-header">
+                    <div class="main-header-container container">
+                        <h1 class="title">Introducing Carbique</h1>
+                        <h2 class="subtitle">It’s seltzer. From the future.</h2>
                     </div>
-                    
                 </div>
-
-                <div class="form-submit container">
-                    <button class="btn btn-form" type="submit" value="Submit">Sign Up</button>
-                </div>
-            </form>
+    
+                <form action="#" class="form">
+    
+                    <div class="form-container container">                    
+                        <legend class="form-legend">
+                            <h2 class="form-title">It's almost here. Be among the first to get yours.</h2>
+                            <p class="form-text">By entering your name and email address, we'll reach out to you the moment our pre-order process opens up. We'll never sell your information or share it with third-party marketing services.</p>
+                        </legend>
+                        <div class="form-content grid">
+                            <div class="input-container flex flex-columns">
+                                <input class="form-input" type="text" id="first-name" name="first-name" aria-label="first-name" placeholder=" " required>
+                                <label class="form-label" for="first-name"><span class="label-content">First Name</span></label>
+                            </div>
+                            <div class="input-container flex flex-columns">
+                                <input class="form-input" type="text" id="last-name" name="last-name" aria-label="last-name" placeholder=" " required>
+                                <label class="form-label" for="last-name">Last Name</label>
+                            </div>
+                            <div class="input-container flex flex-columns">
+                                <input class="form-input" type="email" id="email" name="email" aria-label="email" placeholder=" " required>
+                                <label class="form-label" for="email">Email</label>
+                            </div>
+                            <div class="input-container flex flex-columns">
+                                <input class="form-input" type="tel" id="phone-number" name="phone-number" aria-label="phone-number" placeholder=" " required>
+                                <label class="form-label" for="phone-number">Phone Number</label>
+                            </div>
+                            <div class="input-container flex flex-columns">
+                                <input class="form-input" type="password" id="password" name="password" aria-label="password" placeholder=" " required>
+                                <label class="form-label" for="password">Password</label>
+                            </div>
+                            <div class="input-container flex flex-columns">
+                                <input class="form-input" type="password" id="confirm-password" name="cpassword" aria-label="confirm-password" placeholder=" " required>
+                                <label class="form-label" for="confirm-password">Confirm Password</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="form-submit container">
+                        <button class="btn btn-form" type="submit" value="Submit">Sign Up</button>
+                    </div>
+                </form>
+            
+                <footer id="footer" class="container flex align-items-center">
+                    <p>© <span id="year"></span> Ryan Hayes</p><a target="_blank" href="https://github.com/ryanthayes/top-etch-a-sketch"><img class="github" src="images/github-gray.svg" height="25px"></a>
+                    <script>
+                        document.getElementById("year").innerHTML = new Date().getFullYear();
+                    </script>
+                </footer>
+    
+            </section>
         
-            <footer id="footer" class="container flex align-items-center">
-                <p>© <span id="year"></span> Ryan Hayes</p><a target="_blank" href="https://github.com/ryanthayes/top-etch-a-sketch"><img class="github" src="images/github-gray.svg" height="25px"></a>
-                <script>
-                    document.getElementById("year").innerHTML = new Date().getFullYear();
-                </script>
-            </footer>
-        </section>
+        </div>
+        
+        
     </div>
 </body>
 </html>
