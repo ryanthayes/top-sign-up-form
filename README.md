@@ -5,6 +5,7 @@
 - [Overview](#overview)
   - [The goal](#the-goal)
   - [Preview](#preview)
+  - [Live Site](#live-site)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Features](#features)
@@ -22,6 +23,10 @@ The goal of the project was to make sign-up form for an imaginary service.
 ### Preview
 
 ![](./images/preview.png)
+
+### Live set
+
+[Sign Up Form](https://ryanthayes.github.io/top-sign-up-form/)
 
 ## My process
 
